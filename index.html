@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="game">
+        <h1>Stone Paper Scissors</h1>
+        <p class="subtitle">
+            Best of 5
+        </p>
+
+        <div class="score">
+            <div class="score-box">
+                <h3>You</h3>
+                <span id="playerScore"> 0</span>
+            </div>
+            <div class="score-box">
+                <h3>Computer</h3>
+                <span id="computerScore">0</span>
+            </div>
+        </div>
+
+       <h2 class="choose-title">
+            Choose your move
+        </h2>
+        <div class="choices">
+            <button id="stone"class="choice-button">
+                <span class="emoji">🪨</span>
+                <span>  Stone</span>
+            </button>
+             <button id="paper" class="choice-button">
+                <span class="emoji">📄</span>
+                <span>Paper</span>
+            </button>
+            <button id="scissors" class="choice-button">
+            <span class="emoji">✂️</span>
+            <span> Scissors</span>
+            </button>
+        </div>
+
+        <div class="result">
+            <p id="playerChoice">
+                Your choice: -
+            </p>
+            <p id="computerChoice">
+                Computer choice: -
+            </p>
+            <h2 id="result">
+    Choose your move!
+</h2>
+        </div>
+       <p id="round">
+            Round: 0 / 5
+        </p>
+        <button id="newGame" class="new-game">
+            🔄 New Game
+        </button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+   
